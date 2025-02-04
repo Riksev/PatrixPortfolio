@@ -2,7 +2,7 @@
 
 //	Import the components
 @use "components/animations";
-@use "components/button";
+@use "components/buttons";
 @use "components/mixins";
 @use "components/typography";
 
@@ -11,7 +11,7 @@
 @use "sections/intro";
 @use "sections/companies";
 @use "sections/services";
-@use "sections/reviews";
+@use "sections/testimonials.scss";
 @use "sections/faq";
 @use "sections/portfolio";
 @use "sections/get-started";
