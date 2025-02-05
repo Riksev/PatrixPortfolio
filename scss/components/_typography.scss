@@ -20,3 +20,25 @@
     }
   }
 }
+
+// Heading line
+.heading-line {
+  &::before,
+  &::after {
+    content: "";
+    height: 0.2rem;
+    display: block;
+    background-color: $primary;
+    margin: 0 auto;
+  }
+
+  &::before {
+    width: 10rem;
+  }
+
+  &::after {
+    width: 2rem;
+    padding-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+}
