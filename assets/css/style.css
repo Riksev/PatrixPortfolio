@@ -11901,6 +11901,7 @@ textarea.form-control-lg {
   display: inline-block;
   font-weight: 700;
   text-transform: capitalize;
+  font-family: "Poppins", serif;
 }
 .display-2--description {
   font-size: 1rem;
@@ -11910,6 +11911,7 @@ textarea.form-control-lg {
 @media (min-width: 992px) {
   .display-2--description {
     font-size: 1.4rem;
+    display: inline-block;
   }
 }
 
@@ -11927,6 +11929,31 @@ textarea.form-control-lg {
   width: 2rem;
   padding-top: 0.5rem;
   margin-bottom: 1rem;
+}
+
+.display-3 {
+  font-family: "Poppins", serif;
+}
+.display-3--title {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-family: "Poppins", serif;
+  display: inline-block;
+  background-image: linear-gradient(to right, #9926f0, #d122e3);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (min-width: 992px) {
+  .display-3--title {
+    font-size: 1.8rem;
+  }
+}
+
+.border-right {
+  border-right: 0.1rem solid #dee2e6;
+  height: 100%;
 }
 
 .menu {
@@ -11988,6 +12015,39 @@ textarea.form-control-lg {
 }
 .companies__logo-box img:hover {
   filter: grayscale(120);
+}
+
+.services {
+  position: relative;
+  padding: 1rem 0;
+}
+.services__content {
+  padding: 1rem;
+}
+.services__content p {
+  font-size: 0.8rem;
+}
+@media (min-width: 992px) {
+  .services__content p {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 992px) {
+  .services__content {
+    margin-top: 5rem;
+  }
+}
+.services__content .icon {
+  font-size: 1.5rem;
+  color: #9926f0;
+}
+@media (min-width: 992px) {
+  .services__content .icon {
+    font-size: 2.5rem;
+  }
+}
+.services__pic {
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
