@@ -11974,6 +11974,10 @@ html {
   color: #fff !important;
   text-transform: capitalize;
   font-weight: 600;
+  transition: all 150ms ease-in-out;
+}
+.menu li a:hover {
+  color: #adb5bd !important;
 }
 
 .intro-section {
