@@ -17,3 +17,7 @@ $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3
 
 //	Import Bootstrap 5
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+html {
+  scroll-behavior: smooth;
+}

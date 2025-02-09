@@ -1,0 +1,135 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.footer {
+  padding-top: 1rem;
+  background-color: $footer;
+
+  .contact-box {
+    &__icon {
+      width: 2rem;
+      stroke: $primary;
+      padding-top: 0.5rem;
+
+      @include media-breakpoint-up(sm) {
+        width: 4rem;
+      }
+    }
+
+    &__info {
+      padding: 0.4rem;
+      font-weight: 600;
+
+      &--title {
+        color: $white;
+        font-size: 1rem;
+        text-decoration: none;
+
+        @include media-breakpoint-up(sm) {
+          font-size: 1.4rem;
+        }
+
+        &:hover {
+          color: $primary;
+          transition: all 300ms ease-in-out;
+        }
+      }
+
+      &--subtitle {
+        color: $gray-600;
+        font-size: 0.8rem;
+
+        @include media-breakpoint-up(sm) {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  &-sm {
+    background-color: #212121;
+
+    a {
+      color: $white;
+
+      i {
+        font-size: 1.5rem;
+        margin-left: 1rem;
+
+        &:hover {
+          color: $primary;
+          transition: all 300ms ease-in-out;
+        }
+      }
+    }
+  }
+
+  hr {
+    width: 60px;
+    height: 2px;
+  }
+
+  .company-list {
+    display: block;
+    list-style-type: none;
+
+    li {
+      margin-bottom: 0.5rem;
+
+      a {
+        text-decoration: none;
+        color: $white;
+
+        &:hover {
+          color: $primary;
+          transition: all 300ms ease-in-out;
+        }
+      }
+    }
+  }
+
+  &-bottom {
+    background-color: $black;
+
+    &__copyright {
+      color: $gray-600;
+      font-weight: 400;
+
+      a {
+        text-decoration: none;
+        color: $gray-300;
+
+        &:hover {
+          color: $primary;
+          text-decoration: underline;
+          transition: all 300ms ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+.back-to-top {
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  right: 1.875rem;
+  bottom: 1.875rem;
+  z-index: 9999;
+  background-color: $primary;
+  transition: all 300ms ease-in-out;
+
+  i {
+    color: $white;
+    font-size: 1rem;
+    @include absoluteCenter;
+  }
+
+  &:hover {
+    filter: contrast(20);
+  }
+
+  &:active {
+    filter: grayscale(20);
+  }
+}

@@ -11844,6 +11844,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
 @keyframes pulse-border {
   0% {
     transform: scale(1);
@@ -12182,10 +12186,121 @@ textarea.form-control-lg {
   border: none;
   color: #fff;
 }
-.form button a {
+
+.footer {
+  padding-top: 1rem;
+  background-color: #151414;
+}
+.footer .contact-box__icon {
+  width: 2rem;
+  stroke: #9926f0;
+  padding-top: 0.5rem;
+}
+@media (min-width: 576px) {
+  .footer .contact-box__icon {
+    width: 4rem;
+  }
+}
+.footer .contact-box__info {
+  padding: 0.4rem;
+  font-weight: 600;
+}
+.footer .contact-box__info--title {
   color: #fff;
+  font-size: 1rem;
   text-decoration: none;
-  text-transform: capitalize;
+}
+@media (min-width: 576px) {
+  .footer .contact-box__info--title {
+    font-size: 1.4rem;
+  }
+}
+.footer .contact-box__info--title:hover {
+  color: #9926f0;
+  transition: all 300ms ease-in-out;
+}
+.footer .contact-box__info--subtitle {
+  color: #6c757d;
+  font-size: 0.8rem;
+}
+@media (min-width: 576px) {
+  .footer .contact-box__info--subtitle {
+    font-size: 1rem;
+  }
+}
+.footer-sm {
+  background-color: #212121;
+}
+.footer-sm a {
+  color: #fff;
+}
+.footer-sm a i {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+.footer-sm a i:hover {
+  color: #9926f0;
+  transition: all 300ms ease-in-out;
+}
+.footer hr {
+  width: 60px;
+  height: 2px;
+}
+.footer .company-list {
+  display: block;
+  list-style-type: none;
+}
+.footer .company-list li {
+  margin-bottom: 0.5rem;
+}
+.footer .company-list li a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer .company-list li a:hover {
+  color: #9926f0;
+  transition: all 300ms ease-in-out;
+}
+.footer-bottom {
+  background-color: #000;
+}
+.footer-bottom__copyright {
+  color: #6c757d;
+  font-weight: 400;
+}
+.footer-bottom__copyright a {
+  text-decoration: none;
+  color: #dee2e6;
+}
+.footer-bottom__copyright a:hover {
+  color: #9926f0;
+  text-decoration: underline;
+  transition: all 300ms ease-in-out;
+}
+
+.back-to-top {
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  right: 1.875rem;
+  bottom: 1.875rem;
+  z-index: 9999;
+  background-color: #9926f0;
+  transition: all 300ms ease-in-out;
+}
+.back-to-top i {
+  color: #fff;
+  font-size: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.back-to-top:hover {
+  filter: contrast(20);
+}
+.back-to-top:active {
+  filter: grayscale(20);
 }
 
 /*# sourceMappingURL=style.css.map */
